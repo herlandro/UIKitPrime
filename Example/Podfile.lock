@@ -1,0 +1,16 @@
+PODS:
+  - UIKitPrime (0.1.0)
+
+DEPENDENCIES:
+  - UIKitPrime (from `../`)
+
+EXTERNAL SOURCES:
+  UIKitPrime:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  UIKitPrime: 7e194c2538eeec88f9d1e004abd3ae94e257dc54
+
+PODFILE CHECKSUM: 2c2d4b5d072df42911d8a1575cf8ee83c971bd57
+
+COCOAPODS: 1.15.2

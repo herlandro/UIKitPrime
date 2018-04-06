@@ -1,0 +1,22 @@
+{
+  "name": "UIKitPrime",
+  "version": "0.1.0",
+  "summary": "UIKitPrime is a collection of native Swift extensions, enumerations, and helpers to boost your productivity.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/herlandro/UIKitPrime",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Herlandro Hermogenes": "herlandro.hermogenes@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/herlandro/UIKitPrime.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "15.0"
+  },
+  "source_files": "UIKitPrime/Classes/**/*"
+}

@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '15.0'
+
+target 'UIKitPrime_Example' do
+  pod 'UIKitPrime', :path => '../'
+
+  target 'UIKitPrime_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

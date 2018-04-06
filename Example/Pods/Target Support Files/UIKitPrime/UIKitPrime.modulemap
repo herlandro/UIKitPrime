@@ -1,0 +1,6 @@
+framework module UIKitPrime {
+  umbrella header "UIKitPrime-umbrella.h"
+
+  export *
+  module * { export * }
+}
