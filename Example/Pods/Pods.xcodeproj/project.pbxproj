@@ -12,6 +12,7 @@
 		2D9F938C2C7149E2004742C1 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9F938B2C7149E2004742C1 /* Logger.swift */; };
 		2D9F93912C715499004742C1 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9F93902C715499004742C1 /* UIScrollView.swift */; };
 		2D9F93932C7154FE004742C1 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9F93922C7154FE004742C1 /* Date.swift */; };
+		2D9F93952C7156AB004742C1 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9F93942C7156AB004742C1 /* UIView.swift */; };
 		6B98BAF7DB685A76CDF0DCD0E285FAEA /* Pods-UIKitPrime_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2F23CFEB929A1C62CCF9979316BFD87 /* Pods-UIKitPrime_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CF6A9820B78647C44046C44D4E6F445 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		A0CFC84C5E08748D1240968F53C016A9 /* Pods-UIKitPrime_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E70D5075EDC6836843A9866EFC606EA3 /* Pods-UIKitPrime_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -48,6 +49,7 @@
 		2D9F938B2C7149E2004742C1 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		2D9F93902C715499004742C1 /* UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
 		2D9F93922C7154FE004742C1 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		2D9F93942C7156AB004742C1 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		34E939310AB6AFC3F935C69CCABFB3BD /* UIKitPrime-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIKitPrime-umbrella.h"; sourceTree = "<group>"; };
 		382B8C4C458E6E3036C9E565B4A5699D /* UIKitPrime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIKitPrime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ECF760AA5C0306DF034895BFEE56201 /* Pods-UIKitPrime_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIKitPrime_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			children = (
 				2D9F93902C715499004742C1 /* UIScrollView.swift */,
 				2D9F93922C7154FE004742C1 /* Date.swift */,
+				2D9F93942C7156AB004742C1 /* UIView.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D9F93952C7156AB004742C1 /* UIView.swift in Sources */,
 				2D9F93912C715499004742C1 /* UIScrollView.swift in Sources */,
 				2D9F938C2C7149E2004742C1 /* Logger.swift in Sources */,
 				08FA36FC96E942AD8810C91C8E757B9B /* UIKitPrime-dummy.m in Sources */,
