@@ -21,4 +21,20 @@ public struct DeviceHelper {
     public static var screenWidth: CGFloat {
         return UIScreen.main.bounds.width
     }
+
+    public static func wasInstalledFromTestFlight() -> Bool {
+        if isRunningInSimulator() {
+
+            return false
+        } else {
+            if isAppStoreReceiptSandbox() && !hasEmbeddedMobileProvision() {
+
+                return true
+            } else {
+
+                return false
+            }
+        }
+    }
 }
+
