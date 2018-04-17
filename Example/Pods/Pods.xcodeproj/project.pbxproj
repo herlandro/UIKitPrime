@@ -21,6 +21,9 @@
 		2D9F93A12C7163B5004742C1 /* NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9F93A02C7163B4004742C1 /* NSMutableAttributedString.swift */; };
 		2D9F93A32C7164BC004742C1 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9F93A22C7164BC004742C1 /* DateHelper.swift */; };
 		2D9F93A52C716630004742C1 /* DeviceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9F93A42C716630004742C1 /* DeviceHelper.swift */; };
+		2D9F93A72C716A47004742C1 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9F93A62C716A47004742C1 /* Optional.swift */; };
+		2D9F93A92C716ADC004742C1 /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9F93A82C716ADC004742C1 /* UIDevice.swift */; };
+		2D9F93AB2C716B58004742C1 /* LocalizationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9F93AA2C716B58004742C1 /* LocalizationHelper.swift */; };
 		6B98BAF7DB685A76CDF0DCD0E285FAEA /* Pods-UIKitPrime_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2F23CFEB929A1C62CCF9979316BFD87 /* Pods-UIKitPrime_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CF6A9820B78647C44046C44D4E6F445 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		A0CFC84C5E08748D1240968F53C016A9 /* Pods-UIKitPrime_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E70D5075EDC6836843A9866EFC606EA3 /* Pods-UIKitPrime_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -66,6 +69,9 @@
 		2D9F93A02C7163B4004742C1 /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
 		2D9F93A22C7164BC004742C1 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		2D9F93A42C716630004742C1 /* DeviceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceHelper.swift; sourceTree = "<group>"; };
+		2D9F93A62C716A47004742C1 /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
+		2D9F93A82C716ADC004742C1 /* UIDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
+		2D9F93AA2C716B58004742C1 /* LocalizationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationHelper.swift; sourceTree = "<group>"; };
 		34E939310AB6AFC3F935C69CCABFB3BD /* UIKitPrime-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIKitPrime-umbrella.h"; sourceTree = "<group>"; };
 		382B8C4C458E6E3036C9E565B4A5699D /* UIKitPrime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIKitPrime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ECF760AA5C0306DF034895BFEE56201 /* Pods-UIKitPrime_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIKitPrime_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -173,6 +179,7 @@
 		2D9F938D2C71540F004742C1 /* helper */ = {
 			isa = PBXGroup;
 			children = (
+				2D9F93AA2C716B58004742C1 /* LocalizationHelper.swift */,
 				2D9F93A42C716630004742C1 /* DeviceHelper.swift */,
 				2D9F93A22C7164BC004742C1 /* DateHelper.swift */,
 			);
@@ -198,6 +205,8 @@
 				2D9F939C2C716099004742C1 /* Double.swift */,
 				2D9F93962C715D72004742C1 /* CharacterSet.swift */,
 				2D9F93A02C7163B4004742C1 /* NSMutableAttributedString.swift */,
+				2D9F93A62C716A47004742C1 /* Optional.swift */,
+				2D9F93A82C716ADC004742C1 /* UIDevice.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -441,13 +450,16 @@
 				2D9F93A12C7163B5004742C1 /* NSMutableAttributedString.swift in Sources */,
 				2D9F93992C715E6A004742C1 /* DataConvertible.swift in Sources */,
 				2D9F93952C7156AB004742C1 /* UIView.swift in Sources */,
+				2D9F93A72C716A47004742C1 /* Optional.swift in Sources */,
 				2D9F93912C715499004742C1 /* UIScrollView.swift in Sources */,
 				2D9F93972C715D72004742C1 /* CharacterSet.swift in Sources */,
 				2D9F938C2C7149E2004742C1 /* Logger.swift in Sources */,
 				08FA36FC96E942AD8810C91C8E757B9B /* UIKitPrime-dummy.m in Sources */,
 				2D9F93932C7154FE004742C1 /* Date.swift in Sources */,
 				2D9F939D2C716099004742C1 /* Double.swift in Sources */,
+				2D9F93A92C716ADC004742C1 /* UIDevice.swift in Sources */,
 				2D9F93A52C716630004742C1 /* DeviceHelper.swift in Sources */,
+				2D9F93AB2C716B58004742C1 /* LocalizationHelper.swift in Sources */,
 				2D9F93A32C7164BC004742C1 /* DateHelper.swift in Sources */,
 				2D9F939F2C7162A9004742C1 /* LAContext.swift in Sources */,
 				2D9F939B2C715FAE004742C1 /* Dictionary.swift in Sources */,
