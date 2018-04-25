@@ -1,5 +1,5 @@
 //
-//  Dictionary.swift
+//  Double.swift
 //  UIKitPrime
 //
 //  Created by Herlandro Hermogenes on 12/04/2018.

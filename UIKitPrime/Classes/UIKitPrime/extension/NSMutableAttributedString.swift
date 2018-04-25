@@ -1,5 +1,5 @@
 //
-//  Character.swift
+//  NSMutableAttributedString.swift
 //  UIKitPrime
 //
 //  Created by Herlandro Hermogenes on 14/04/2018.

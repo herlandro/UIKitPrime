@@ -1,5 +1,5 @@
 //
-//  Character.swift
+//  String.swift
 //  UIKitPrime
 //
 //  Created by Herlandro Hermogenes on 18/04/2018.
