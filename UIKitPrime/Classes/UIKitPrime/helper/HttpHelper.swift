@@ -7,8 +7,6 @@
 
 import Foundation
 import SystemConfiguration
-import Alamofire
-import SwiftyJSON
 
 open class HttpHelper {
 
@@ -57,7 +55,7 @@ open class HttpHelper {
 
 	}
 
-	open var alamofireManager: SessionManager!
+
 
 	public static let shared = HttpHelper()
 
@@ -85,168 +83,7 @@ open class HttpHelper {
 		return (isReachable && !needsConnection)
 	}
 
-	public init() {
+	public init() { }
 
-		let configuration = URLSessionConfiguration.default
-		alamofireManager = Alamofire.SessionManager(configuration: configuration)
-	}
 
-	open func setTimeOut(timeout: Int) {
-
-		let configuration = URLSessionConfiguration.default
-		configuration.timeoutIntervalForRequest = TimeInterval(timeout) // seconds
-		configuration.timeoutIntervalForResource = TimeInterval(timeout)
-		alamofireManager = Alamofire.SessionManager(configuration: configuration)
-	}
-
-	open func makeRequest(url: String, method: HTTPMethod, headers: HTTPHeaders) -> DataResponse<Any> {
-
-		if CompilerHelper.isDebugging {
-
-			let performanceHelper = PerformanceHelper()
-			performanceHelper.logTime(.start)
-			let response = alamofireManager.request(url, headers: headers).responseJSON()
-			performanceHelper.logTime(.stop)
-			let timeStamp = performanceHelper.printElapsedTime(forDescription: url, in: .milliseconds)
-			PerformanceLogger.shared.httpLogger.append(timeStamp)
-
-			return response
-		} else {
-
-			let performanceHelper = PerformanceHelper()
-			performanceHelper.logTime(.start)
-			let response = alamofireManager.request(url, headers: headers).responseJSON()
-			performanceHelper.logTime(.stop)
-			let timeElapsed = String(performanceHelper.getElapsedTime(in: .milliseconds))
-			let startTimeStamp = performanceHelper.getStartTimeStamp()
-			let endTimeStamp = performanceHelper.getEndTimeStamp()
-
-			let timeStamp = ("Time Performance for: ' |\(url)' | StartTime: \(startTimeStamp) | EndTime: \(endTimeStamp) | TimeElapsed: \(timeElapsed) \(TimeUnit.milliseconds.description)")
-			PerformanceLogger.shared.httpLogger.append(timeStamp)
-
-			return response
-		}
-	}
-
-	open func makeRequest(url: String, parameter: [String: String], encoding: ParameterEncoding) -> DataResponse<Any> {
-
-		if CompilerHelper.isDebugging {
-
-			let performanceHelper = PerformanceHelper()
-			performanceHelper.logTime(.start)
-			let response = alamofireManager.request(url, parameters: parameter, encoding: encoding).responseJSON()
-			performanceHelper.logTime(.stop)
-			let timeStamp = performanceHelper.printElapsedTime(forDescription: url, in: .milliseconds)
-			PerformanceLogger.shared.httpLogger.append(timeStamp)
-
-			return response
-		} else {
-
-			let performanceHelper = PerformanceHelper()
-			performanceHelper.logTime(.start)
-			let response = alamofireManager.request(url, parameters: parameter, encoding: encoding).responseJSON()
-			performanceHelper.logTime(.stop)
-			let timeElapsed = String(performanceHelper.getElapsedTime(in: .milliseconds))
-			let startTimeStamp = performanceHelper.getStartTimeStamp()
-			let endTimeStamp = performanceHelper.getEndTimeStamp()
-
-			let timeStamp = ("Time Performance for: ' |\(url)' | StartTime: \(startTimeStamp) | EndTime: \(endTimeStamp) | TimeElapsed: \(timeElapsed) \(TimeUnit.milliseconds.description)")
-			PerformanceLogger.shared.httpLogger.append(timeStamp)
-
-			return response
-		}
-	}
-
-	open func makeRequest(url: String, parameter: [String: Any], method: HTTPMethod, header: HTTPHeaders) -> DataResponse<Any> {
-
-		if CompilerHelper.isDebugging {
-
-			let performanceHelper = PerformanceHelper()
-			performanceHelper.logTime(.start)
-			let response = alamofireManager.request(url, method: method, parameters: parameter, headers: header).responseJSON()
-			performanceHelper.logTime(.stop)
-			let timeStamp = performanceHelper.printElapsedTime(forDescription: url, in: .milliseconds)
-			PerformanceLogger.shared.httpLogger.append(timeStamp)
-
-			return response
-		} else {
-
-			let performanceHelper = PerformanceHelper()
-			performanceHelper.logTime(.start)
-			let response = alamofireManager.request(url, method: method, parameters: parameter, headers: header).responseJSON()
-			performanceHelper.logTime(.stop)
-			let timeElapsed = String(performanceHelper.getElapsedTime(in: .milliseconds))
-			let startTimeStamp = performanceHelper.getStartTimeStamp()
-			let endTimeStamp = performanceHelper.getEndTimeStamp()
-			let timeStamp = ("Time Performance for: ' |\(url)' | StartTime: \(startTimeStamp) | EndTime: \(endTimeStamp) | TimeElapsed: \(timeElapsed) \(TimeUnit.milliseconds.description)")
-			PerformanceLogger.shared.httpLogger.append(timeStamp)
-
-			return response
-		}
-	}
-
-	open func makeRequest(url: String, body: String, method: HTTPMethod, headers: HTTPHeaders) -> DataResponse<Any> {
-
-		var request = URLRequest(url: URL(string: url)!)
-		request.httpMethod = method.rawValue
-		if !body.isEmpty {
-
-			request.httpBody = body.data(using: .utf8, allowLossyConversion: false)
-		}
-		for (field, value) in headers {
-
-			request.setValue(value, forHTTPHeaderField: field)
-		}
-		let performanceHelper = PerformanceHelper()
-
-		if CompilerHelper.isDebugging {
-
-			performanceHelper.logTime(.start)
-			let response = alamofireManager.request(request).responseJSON()
-			performanceHelper.logTime(.stop)
-			let timeStamp = performanceHelper.printElapsedTime(forDescription: url, in: .milliseconds)
-			PerformanceLogger.shared.httpLogger.append(timeStamp)
-
-			return response
-		} else {
-
-			let performanceHelper = PerformanceHelper()
-			performanceHelper.logTime(.start)
-			let response = alamofireManager.request(request).responseJSON()
-			performanceHelper.logTime(.stop)
-			let timeElapsed = String(performanceHelper.getElapsedTime(in: .milliseconds))
-			let startTimeStamp = performanceHelper.getStartTimeStamp()
-			let endTimeStamp = performanceHelper.getEndTimeStamp()
-
-			let timeStamp = ("Time Performance for: ' |\(url)' | StartTime: \(startTimeStamp) | EndTime: \(endTimeStamp) | TimeElapsed: \(timeElapsed) \(TimeUnit.milliseconds.description)")
-			PerformanceLogger.shared.httpLogger.append(timeStamp)
-
-			return response
-		}
-	}
-
-	open func getDataIfSuccessful(response: DataResponse<Any>) -> JSON? {
-
-		var result: JSON? = nil
-		if let json = response.result.value {
-
-			result = JSON(json)
-		}
-		return result
-	}
-
-	open func unsecureSessionManager(urlSessionConfiguration: URLSessionConfiguration = URLSessionConfiguration.default) -> SessionManager {
-		let trustPolicies = UnsecureTrustPolicyManager(policies: [:])
-
-		return Alamofire.SessionManager(configuration: urlSessionConfiguration, delegate: SessionDelegate(), serverTrustPolicyManager: trustPolicies)
-	}
-
-	class UnsecureTrustPolicyManager: ServerTrustPolicyManager {
-
-		// Override this function in order to trust any self-signed https
-		open override func serverTrustPolicy(forHost host: String) -> ServerTrustPolicy? {
-
-			return ServerTrustPolicy.disableEvaluation
-		}
-	}
 }
