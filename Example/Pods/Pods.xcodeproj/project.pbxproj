@@ -49,6 +49,7 @@
 		2D9F93E42C7232B7004742C1 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9F93D32C7232B7004742C1 /* AlertHelper.swift */; };
 		2D9F93E52C7232B7004742C1 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9F93D42C7232B7004742C1 /* AppHelper.swift */; };
 		2D9F93E62C7232B7004742C1 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9F93D52C7232B7004742C1 /* ImageHelper.swift */; };
+		2D9F93E92C723DCA004742C1 /* ActiveStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9F93E82C723DCA004742C1 /* ActiveStatus.swift */; };
 		6B98BAF7DB685A76CDF0DCD0E285FAEA /* Pods-UIKitPrime_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2F23CFEB929A1C62CCF9979316BFD87 /* Pods-UIKitPrime_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CF6A9820B78647C44046C44D4E6F445 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		A0CFC84C5E08748D1240968F53C016A9 /* Pods-UIKitPrime_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E70D5075EDC6836843A9866EFC606EA3 /* Pods-UIKitPrime_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -122,6 +123,7 @@
 		2D9F93D32C7232B7004742C1 /* AlertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		2D9F93D42C7232B7004742C1 /* AppHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
 		2D9F93D52C7232B7004742C1 /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		2D9F93E82C723DCA004742C1 /* ActiveStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveStatus.swift; sourceTree = "<group>"; };
 		34E939310AB6AFC3F935C69CCABFB3BD /* UIKitPrime-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIKitPrime-umbrella.h"; sourceTree = "<group>"; };
 		382B8C4C458E6E3036C9E565B4A5699D /* UIKitPrime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIKitPrime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ECF760AA5C0306DF034895BFEE56201 /* Pods-UIKitPrime_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIKitPrime_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 		2D9F938E2C71540F004742C1 /* enumeration */ = {
 			isa = PBXGroup;
 			children = (
+				2D9F93E82C723DCA004742C1 /* ActiveStatus.swift */,
 			);
 			path = enumeration;
 			sourceTree = "<group>";
@@ -541,6 +544,7 @@
 				2D9F93C02C716DAC004742C1 /* UIImage.swift in Sources */,
 				2D9F93912C715499004742C1 /* UIScrollView.swift in Sources */,
 				2D9F93DD2C7232B7004742C1 /* HttpHelper.swift in Sources */,
+				2D9F93E92C723DCA004742C1 /* ActiveStatus.swift in Sources */,
 				2D9F93972C715D72004742C1 /* CharacterSet.swift in Sources */,
 				2D9F93E12C7232B7004742C1 /* Shadow.swift in Sources */,
 				2D9F938C2C7149E2004742C1 /* Logger.swift in Sources */,
