@@ -58,6 +58,7 @@
 		2D9F93F72C724014004742C1 /* ImageResolutionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9F93F22C724014004742C1 /* ImageResolutionType.swift */; };
 		2D9F93F82C724014004742C1 /* NavigationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9F93F32C724014004742C1 /* NavigationType.swift */; };
 		2D9F93F92C724014004742C1 /* PlatformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9F93F42C724014004742C1 /* PlatformType.swift */; };
+		2D9F93FB2C724328004742C1 /* GradientViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9F93FA2C724328004742C1 /* GradientViewHelper.swift */; };
 		6B98BAF7DB685A76CDF0DCD0E285FAEA /* Pods-UIKitPrime_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2F23CFEB929A1C62CCF9979316BFD87 /* Pods-UIKitPrime_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CF6A9820B78647C44046C44D4E6F445 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		A0CFC84C5E08748D1240968F53C016A9 /* Pods-UIKitPrime_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E70D5075EDC6836843A9866EFC606EA3 /* Pods-UIKitPrime_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -140,6 +141,7 @@
 		2D9F93F22C724014004742C1 /* ImageResolutionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResolutionType.swift; sourceTree = "<group>"; };
 		2D9F93F32C724014004742C1 /* NavigationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationType.swift; sourceTree = "<group>"; };
 		2D9F93F42C724014004742C1 /* PlatformType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformType.swift; sourceTree = "<group>"; };
+		2D9F93FA2C724328004742C1 /* GradientViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientViewHelper.swift; sourceTree = "<group>"; };
 		34E939310AB6AFC3F935C69CCABFB3BD /* UIKitPrime-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIKitPrime-umbrella.h"; sourceTree = "<group>"; };
 		382B8C4C458E6E3036C9E565B4A5699D /* UIKitPrime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIKitPrime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ECF760AA5C0306DF034895BFEE56201 /* Pods-UIKitPrime_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIKitPrime_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 		2D9F938D2C71540F004742C1 /* helper */ = {
 			isa = PBXGroup;
 			children = (
+				2D9F93FA2C724328004742C1 /* GradientViewHelper.swift */,
 				2D9F93AA2C716B58004742C1 /* LocalizationHelper.swift */,
 				2D9F93C72C7232B6004742C1 /* ActionHelper.swift */,
 				2D9F93D32C7232B7004742C1 /* AlertHelper.swift */,
@@ -554,6 +557,7 @@
 				2D9F93C42C716DAC004742C1 /* UIColor.swift in Sources */,
 				2D9F93A12C7163B5004742C1 /* NSMutableAttributedString.swift in Sources */,
 				2D9F93992C715E6A004742C1 /* DataConvertible.swift in Sources */,
+				2D9F93FB2C724328004742C1 /* GradientViewHelper.swift in Sources */,
 				2D9F93E62C7232B7004742C1 /* ImageHelper.swift in Sources */,
 				2D9F93E02C7232B7004742C1 /* CoderHelper.swift in Sources */,
 				2D9F93E42C7232B7004742C1 /* AlertHelper.swift in Sources */,
