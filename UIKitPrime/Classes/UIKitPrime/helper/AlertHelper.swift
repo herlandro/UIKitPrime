@@ -1,5 +1,5 @@
 //
-//  Logger.swift
+//  AlertHelper.swift
 //  UIKitPrime
 //
 //  Created by Herlandro Hermogenes on 12/05/2018.
