@@ -1,5 +1,5 @@
 //
-//  Logger.swift
+//  ActiveStatus.swift
 //  UIKitPrime
 //
 //  Created by Herlandro Hermogenes on 05/09/2018.

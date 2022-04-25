@@ -1,5 +1,5 @@
 //
-//  Logger.swift
+//  NavigationType.swift
 //  UIKitPrime
 //
 //  Created by Herlandro Hermogenes on 11/02/2022.

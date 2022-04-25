@@ -1,5 +1,5 @@
 //
-//  Logger.swift
+//  MediaContentType.swift
 //  UIKitPrime
 //
 //  Created by Herlandro Hermogenes on 05/05/2020.

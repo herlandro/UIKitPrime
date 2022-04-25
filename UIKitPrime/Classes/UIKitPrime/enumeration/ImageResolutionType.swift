@@ -1,5 +1,5 @@
 //
-//  Logger.swift
+//  ImageResolutionType.swift
 //  UIKitPrime
 //
 //  Created by Herlandro Hermogenes on 27/11/2019.

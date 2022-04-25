@@ -1,5 +1,5 @@
 //
-//  Logger.swift
+//  Default.swift
 //  UIKitPrime
 //
 //  Created by Herlandro Hermogenes on 20/10/2018.

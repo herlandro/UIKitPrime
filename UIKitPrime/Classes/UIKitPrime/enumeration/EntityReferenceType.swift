@@ -1,5 +1,5 @@
 //
-//  Logger.swift
+//  EntityReferenceType.swift
 //  UIKitPrime
 //
 //  Created by Herlandro Hermogenes on 25/11/2018.
