@@ -1,5 +1,5 @@
 //
-//  Character.swift
+//  DeviceHelper.swift
 //  UIKitPrime
 //
 //  Created by Herlandro Hermogenes on 15/04/2018.
