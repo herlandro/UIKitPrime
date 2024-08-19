@@ -1,9 +1,10 @@
 # UIKit Prime
-
--- [![CI Status](https://img.shields.io/travis/Herlandro Hermogenes/UIKitPrime.svg?style=flat)](https://travis-ci.org/Herlandro Hermogenes/UIKitPrime)
--- [![Version](https://img.shields.io/cocoapods/v/UIKitPrime.svg?style=flat)](https://cocoapods.org/pods/UIKitPrime)
--- [![License](https://img.shields.io/cocoapods/l/UIKitPrime.svg?style=flat)](https://cocoapods.org/pods/UIKitPrime)
--- [![Platform](https://img.shields.io/cocoapods/p/UIKitPrime.svg?style=flat)](https://cocoapods.org/pods/UIKitPrime)
+<!---
+[![CI Status](https://img.shields.io/travis/Herlandro Hermogenes/UIKitPrime.svg?style=flat)](https://travis-ci.org/Herlandro Hermogenes/UIKitPrime)
+[![Version](https://img.shields.io/cocoapods/v/UIKitPrime.svg?style=flat)](https://cocoapods.org/pods/UIKitPrime)
+[![License](https://img.shields.io/cocoapods/l/UIKitPrime.svg?style=flat)](https://cocoapods.org/pods/UIKitPrime)
+[![Platform](https://img.shields.io/cocoapods/p/UIKitPrime.svg?style=flat)](https://cocoapods.org/pods/UIKitPrime)
+-->
 
 ## Example
 
