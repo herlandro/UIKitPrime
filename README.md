@@ -23,7 +23,7 @@ pod 'UIKitPrime'
 
 ## Author
 
-Herlandro Hermogenes, herlandro.hermogenes@gmail.com
+Herlandro Hermogenes
 
 ## License
 
