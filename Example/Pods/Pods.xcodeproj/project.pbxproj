@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		08FA36FC96E942AD8810C91C8E757B9B /* UIKitPrime-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C473391C8C3EF39E476BFC368BDD7F83 /* UIKitPrime-dummy.m */; };
 		1684E3D346B05CEA384DC705608B28EC /* UIKitPrime-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 34E939310AB6AFC3F935C69CCABFB3BD /* UIKitPrime-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D3639F52CEF592B00716177 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3639F42CEF592B00716177 /* UIViewController.swift */; };
 		2D9F938C2C7149E2004742C1 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9F938B2C7149E2004742C1 /* Logger.swift */; };
 		2D9F93912C715499004742C1 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9F93902C715499004742C1 /* UIScrollView.swift */; };
 		2D9F93932C7154FE004742C1 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9F93922C7154FE004742C1 /* Date.swift */; };
@@ -96,6 +97,7 @@
 		182802085C88AF0475C50712C0972B7E /* Pods_UIKitPrime_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKitPrime_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C4AE211443D61578276275DDD352F2F /* UIKitPrime-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UIKitPrime-Info.plist"; sourceTree = "<group>"; };
 		1DA28511321620DE2CBD2E5EC58B7EBB /* Pods-UIKitPrime_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UIKitPrime_Example-dummy.m"; sourceTree = "<group>"; };
+		2D3639F42CEF592B00716177 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		2D9F938B2C7149E2004742C1 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		2D9F93902C715499004742C1 /* UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
 		2D9F93922C7154FE004742C1 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
@@ -302,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				2D9F93962C715D72004742C1 /* CharacterSet.swift */,
+				2D3639F42CEF592B00716177 /* UIViewController.swift */,
 				2D9F93982C715E6A004742C1 /* DataConvertible.swift */,
 				2D9F93922C7154FE004742C1 /* Date.swift */,
 				2D9F939A2C715FAE004742C1 /* Dictionary.swift */,
@@ -586,6 +589,7 @@
 				2D9F93E22C7232B7004742C1 /* UserLocationManagerHelper.swift in Sources */,
 				2D9F93A72C716A47004742C1 /* Optional.swift in Sources */,
 				2D9F93DC2C7232B7004742C1 /* CompilerHelper.swift in Sources */,
+				2D3639F52CEF592B00716177 /* UIViewController.swift in Sources */,
 				2D9F93BA2C716DAC004742C1 /* UITableView.swift in Sources */,
 				2D9F94022C724DE6004742C1 /* TableCellPrototypeBase.swift in Sources */,
 				2D9F93FF2C72497E004742C1 /* Touch.swift in Sources */,
